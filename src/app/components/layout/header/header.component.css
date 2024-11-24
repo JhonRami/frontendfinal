@@ -1,0 +1,48 @@
+.custom-header {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos dentro del header */
+    height: 142px; /* Aumenta o ajusta el alto del header según lo necesites */
+    padding: 0 20px; /* Añade un poco de espacio a los lados */
+    background-color: #007ad9; /* Color azul institucional */
+    color: white;
+    border-bottom: 2px solid #004e8c;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .header-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el título */
+  }
+  
+  .header-right {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+  
+  .logo {
+    height: 60px; /* Ajusta el tamaño del logo */
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 28px; /* Ajusta el tamaño del título */
+  }
+  
+  .p-button-rounded {
+    border-radius: 50px;
+  }
+  
+  .p-button-danger {
+    background-color: #f44336;
+    border: none;
+  }
+  

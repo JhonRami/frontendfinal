@@ -1,0 +1,35 @@
+/* Aplica estos estilos al panel lateral y los botones del menú */
+
+::ng-deep .p-panelmenu .p-panelmenu-header {
+    background-color: #007bff !important; /* Color de fondo azul */
+    color: white !important; /* Texto en blanco */
+    font-size: 16px;
+    padding: 4px;
+  }
+  
+  ::ng-deep .p-panelmenu .p-panelmenu-header:hover {
+    background-color: #0056b3 !important; /* Azul más oscuro al pasar el mouse */
+  }
+  
+  ::ng-deep .p-panelmenu .p-panelmenu-content {
+    background-color: #e0f7fa !important; /* Fondo claro en el contenido */
+  }
+  
+  ::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem-link {
+    color: #333 !important; /* Color del texto normal */
+  }
+  
+  ::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem-link:hover {
+    background-color: #cce7ff !important; /* Fondo claro al pasar el mouse */
+    color: #0056b3 !important; /* Color del texto al pasar el mouse */
+  }
+  
+  /* Fondo del contenedor */
+  .card {
+    background-color: #e0f7fa; /* Fondo azul claro */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ocupa todo el espacio del aside */
+  }
+  

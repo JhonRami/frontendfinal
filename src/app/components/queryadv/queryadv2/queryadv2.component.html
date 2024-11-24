@@ -1,0 +1,73 @@
+<p-card class="w-12 h-full">
+    <ng-template pTemplate="header">
+        <div class="flex justify-content-between flex-wrap">
+            <h3 class="ml-4">
+                Consulta 2: Condiciones desde parámetros del cuerpo.
+            </h3>
+            <div class="mt-2 mr-2">
+                <a 
+                  pButton 
+                  pRipple
+                  label="Ir a Consulta 1" 
+                  icon="pi pi-search"
+                  class="bg-cyan-600"
+                  [routerLink]="['/qeryadv1']">
+                </a>
+                <a 
+                  pButton 
+                  pRipple
+                  label="Ir a Consulta 3" 
+                  icon="pi pi-search"
+                  class="bg-cyan-600"
+                  [routerLink]="['/qeryadv3']">
+                </a>
+                <a 
+                  pButton 
+                  pRipple
+                  label="Ir a Consulta 4" 
+                  icon="pi pi-search"
+                  class="bg-cyan-600"
+                  [routerLink]="['/qeryadv4']">
+                </a>
+                <a 
+                  pButton 
+                  pRipple
+                  label="Ir a Consulta 5" 
+                  icon="pi pi-search"
+                  class="bg-cyan-600"
+                  [routerLink]="['/qeryadv5']">
+                </a>
+                <a 
+                  pButton 
+                  pRipple
+                  label="Ir a Consulta 6" 
+                  icon="pi pi-search"
+                  class="bg-cyan-600"
+                  [routerLink]="['/qeryadv6']">
+                </a>
+            </div>
+        </div>
+    </ng-template>
+    <p>
+        <p-table [value]="queryadv2">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Estudiante</th>
+                    <th>Fecha de Admisión</th>
+                    <th>Estado</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-queryadv2>
+                <tr>
+                    <td>{{ getStudentName(queryadv2.student) }}</td>
+                    <td>{{ queryadv2.dateadmission }}</td>
+                    <td>{{ queryadv2.status }}</td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </p>
+</p-card>
+

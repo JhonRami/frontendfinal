@@ -1,0 +1,100 @@
+footer {
+    background-color: #e0f7fa; /* Azul clarito */
+    padding: 0px 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: space-between; /* Distribuye las secciones */
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%; /* Asegura que el footer ocupe todo el ancho disponible */
+    height: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Alinea las secciones correctamente */
+    align-items: center; /* Centra verticalmente las secciones */
+    width: 100%; /* Asegura que ocupe todo el espacio horizontal */
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido del footer */
+}
+
+.footer-section {
+    flex: 1; /* Asegura que cada sección ocupe una parte equitativa del espacio */
+    min-width: 150px;
+    text-align: center; /* Centra el contenido dentro de cada sección */
+}
+
+.footer-section:first-child {
+    text-align: left; /* Alinea "Contact Us" a la izquierda */
+}
+
+.footer-section:last-child {
+    text-align: center; /* Cambiado de right a center */
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #006064; /* Azul oscuro */
+}
+
+.footer-section p, 
+.footer-section ul {
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #006064;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #333;
+}
+
+/* Iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los iconos */
+    gap: 10px; /* Añade espacio entre los iconos */
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Estilo de la parte inferior del footer */
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #b2ebf2; /* Un poco más oscuro que el fondo general */
+    color: #006064;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
